@@ -59,6 +59,13 @@ module.exports = {
   "homepage.lottery-card-title": "Play the lottery",
   "homepage.lottery-card-body": "Participating in the lottery and you can win products crafted by the best artisans from Venice",
 
+  "barpage.h1": "Virtual Bacaro Tour",
+  "barpage.lead": "Compose your Menu based on the traditional Venetian food and drinks you find in Sagra. The meal is one of the most sublime moments of each sagra, matching tradition and sociality, among the scent of dishes that tell the history of the area.",
+
+  "barpage.h2": "Virtual Bacaro Tour",
+  "barpage.h2-lead": "At the online sagra you will not be able for the moment to taste these delicacies... but you can do much more: select drinks and dishes, the amount you will pay for them will be donated to support bars, 'bacari', wine bars, restaurants and typical trattorias in Venice, which we are supporting during this difficult moment, the Covid-19 emergency period.",
+  "barpage.h2-sublead": "To contribute will also allow you to discover, by clicking on partners links,  the culinary curiosities of Venice!",
+
   "lottery.h1": "Play the lottery!",
   "lottery.lead": "Game is like love but this time you will win for sure! Participating in the lottery and you can win products crafted by the best artisans from Venice and if you’re not lucky, you will anyway help with your donation to them and to maintain their traditional businesses.",
   "lottery.amount": "€",
