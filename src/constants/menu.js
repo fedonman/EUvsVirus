@@ -1,45 +1,46 @@
 const data = [{
     id: "home",
-    icon: "iconsminds-shop-4",
+    icon: "iconsminds-home",
     label: "menu.home",
     to: "/app/home",
   },
   {
     id: "discovery",
-    icon: "iconsminds-digital-drawing",
+    icon: "iconsminds-map2",
     label: "menu.discovery",
     to: "/app/discovery",
   },
   {
-    id: "stage",
-    icon: "iconsminds-air-balloon-1",
-    label: "menu.stage",
-    to: "/app/stage",
-  },
-  {
     id: "camp",
-    icon: "iconsminds-pantone",
+    icon: "iconsminds-network",
     label: "menu.camp",
     to: "/app/camp",
   },
   {
+    id: "lottery",
+    icon: "iconsminds-financial",
+    label: "menu.lottery",
+    to: "/app/lottery"
+  },
+  {
+    id: "stage",
+    icon: "iconsminds-electric-guitar",
+    label: "menu.stage",
+    to: "/app/stage",
+  },
+  {
     id: "bar",
-    icon: "iconsminds-three-arrow-fork",
+    icon: "iconsminds-cocktail",
     label: "menu.bar",
     to: "/app/bar",
   },
   {
     id: "fiera",
-    icon: "iconsminds-bucket",
+    icon: "iconsminds-environmental-3",
     label: "menu.fiera",
     to: "/app/fiera"
   },
-  {
-    id: "lottery",
-    icon: "iconsminds-bucket",
-    label: "menu.lottery",
-    to: "/app/lottery"
-  },
+  
   // {
   //   id: "docs",
   //   icon: "iconsminds-library",

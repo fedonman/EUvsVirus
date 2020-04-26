@@ -7,16 +7,11 @@ import Breadcrumb from "../../containers/navs/Breadcrumb";
 export default class DiscoveryPage extends Component {
     render() {
         return (
-            <Fragment>
-            <Row>
-              <Colxx xxs="12">
-                <Breadcrumb heading="menu.blank-page" match={this.props.match} />
-                <Separator className="mb-5" />
-              </Colxx>
-            </Row>
-            <Row>
-              <Colxx xxs="12" className="mb-4">
-                <p><IntlMessages id="menu.blank-page"/></p>
+          <Fragment>
+            <iframe class="discovery-map" title="map" src="https://www.google.com/maps/d/embed?mid=19m-x7TRcXlQK2tF90D2oGZhA57nVczNI" width="100%" height="100%"></iframe>
+            <Row className="app-row">
+              <Colxx xxs="12" className="chat-app">
+                
               </Colxx>
             </Row>
           </Fragment>

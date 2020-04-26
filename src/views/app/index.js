@@ -22,22 +22,19 @@ const HomePage = React.lazy(() =>
   import(/* webpackChunkName: "blank-page" */ './home')
 );
 const DiscoveryPage = React.lazy(() =>
-  import(/* webpackChunkName: "blank-page" */ './home')
+  import(/* webpackChunkName: "blank-page" */ './discovery')
 );
 const StagePage = React.lazy(() =>
-  import(/* webpackChunkName: "blank-page" */ './home')
-);
-const CampPage = React.lazy(() =>
-  import(/* webpackChunkName: "blank-page" */ './home')
+  import(/* webpackChunkName: "blank-page" */ './stage')
 );
 const BarPage = React.lazy(() =>
-  import(/* webpackChunkName: "blank-page" */ './home')
+  import(/* webpackChunkName: "blank-page" */ './bar')
 );
 const FieraPage = React.lazy(() =>
-  import(/* webpackChunkName: "blank-page" */ './home')
+  import(/* webpackChunkName: "blank-page" */ './fiera')
 );
 const LotteryPage = React.lazy(() =>
-  import(/* webpackChunkName: "blank-page" */ './home')
+  import(/* webpackChunkName: "blank-page" */ './lottery')
 );
 const ChatApp = React.lazy(() => import('./applications/chat'));
 
@@ -54,7 +51,7 @@ class App extends Component {
               <Redirect
                 exact
                 from={`${match.url}/`}
-                to={`${match.url}/dashboards`}
+                to={`${match.url}/home`}
               />
               <Route
                 path={`${match.url}/home`}
@@ -65,13 +62,17 @@ class App extends Component {
                 render={props => <DiscoveryPage {...props} />}
               />
               <Route
-                path={`${match.url}/stage`}
-                render={props => <StagePage {...props} />}
-              />
-              <Route
                 path={`${match.url}/camp`}
                 render={props => <ChatApp {...props} />}
               />
+              <Route
+                path={`${match.url}/lottery`}
+                render={props => <LotteryPage {...props} />}
+              />
+              <Route
+                path={`${match.url}/stage`}
+                render={props => <StagePage {...props} />}
+              />         
               <Route
                 path={`${match.url}/bar`}
                 render={props => <BarPage {...props} />}
@@ -79,11 +80,7 @@ class App extends Component {
               <Route
                 path={`${match.url}/fiera`}
                 render={props => <FieraPage {...props} />}
-              />
-              <Route
-                path={`${match.url}/lottery`}
-                render={props => <LotteryPage {...props} />}
-              />
+              />             
               <Redirect to="/error" />
             </Switch>
           </Suspense>

@@ -11,7 +11,7 @@ const Logs = () => {
       <Card>
         <CardBody>
           <CardTitle>
-            <IntlMessages id="dashboards.logs" />
+            <IntlMessages id="lottery.latest-donations" />
           </CardTitle>
           <div className="dashboard-logs">
             <PerfectScrollbar
@@ -31,7 +31,7 @@ const Logs = () => {
                         </td>
                         <td>
                           <span className="font-weight-medium">
-                            {log.label}
+                            {log.label}€
                           </span>
                         </td>
                         <td className="text-right">

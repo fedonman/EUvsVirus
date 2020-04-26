@@ -55,40 +55,41 @@ class LastStepEnd extends Component {
                     <Wizard>
                         <TopNavigation className="justify-content-center" disableNav={false} topNavClick={this.topNavClick} />
                         <Steps>
-                            <Step id="step1" name={messages["wizard.step-name-1"]} desc={messages["wizard.step-desc-1"]}>
+                            <Step id="step1" name={messages["lottery.step-name-1"]} desc={messages["lottery.step-desc-1"]}>
                                 <div className="wizard-basic-step">
                                     <Form>
                                         <FormGroup>
                                             <Label>
-                                                <IntlMessages id="forms.name" />
+                                                {this.state.amount || 5} <IntlMessages id="lottery.amount" />
+                                            </Label>
+                                            <Input type="range" min="1" max="100" step="1" name="name" value={this.state.amount || 5} onChange={(e) => { this.setState({ amount: e.target.value }) }} />
+                                        </FormGroup>
+                                    </Form>
+                                </div>
+                            </Step>
+                            <Step id="step2" name={messages["lottery.step-name-2"]} desc={messages["lottery.step-desc-2"]}>
+                                <div className="wizard-basic-step">
+                                    <Form>
+                                        <FormGroup>
+                                            <Label>
+                                                <IntlMessages id="lottery.name" />
                                             </Label>
                                             <Input type="text" name="name" placeholder={messages["forms.name"]} value={this.state.name} onChange={(e) => { this.setState({ name: e.target.value }) }} />
                                         </FormGroup>
                                     </Form>
                                 </div>
+
                             </Step>
-                            <Step id="step2" name={messages["wizard.step-name-2"]} desc={messages["wizard.step-desc-2"]}>
+                            <Step id="step3" name={messages["lottery.step-name-3"]} desc={messages["lottery.step-desc-3"]}>
+
                                 <div className="wizard-basic-step">
                                     <Form>
                                         <FormGroup>
                                             <Label>
-                                                <IntlMessages id="forms.email" />
+                                                <IntlMessages id="lottery.email" />
                                             </Label>
                                             <Input type="email" name="email" placeholder={messages["forms.email"]} value={this.state.email} onChange={(e) => { this.setState({ email: e.target.value }) }} />
-                                        </FormGroup>
-                                    </Form>
-                                </div>
-
-                            </Step>
-                            <Step id="step3" name={messages["wizard.step-name-3"]} desc={messages["wizard.step-desc-3"]}>
-
-                                <div className="wizard-basic-step">
-                                    <Form>
-                                        <FormGroup>
-                                            <Label>
-                                                <IntlMessages id="forms.password" />
-                                            </Label>
-                                            <Input type="password" name="password" placeholder={messages["forms.password"]} value={this.state.password} onChange={(e) => { this.setState({ password: e.target.value }) }} />
+                                            {/* <Input type="password" name="password" placeholder={messages["forms.password"]} value={this.state.password} onChange={(e) => { this.setState({ password: e.target.value }) }} /> */}
                                         </FormGroup>
                                     </Form>
                                 </div>
@@ -96,12 +97,12 @@ class LastStepEnd extends Component {
                             </Step>
                             <Step id="step4" hideTopNav={true}>
                                 <div className="wizard-basic-step text-center">
-                                    <h2 className="mb-2"><IntlMessages id="wizard.content-thanks" /></h2>
-                                    <p><IntlMessages id="wizard.registered" /></p>
+                                    <h2 className="mb-2"><IntlMessages id="lottery.content-thanks" /></h2>
+                                    <p><IntlMessages id="lottery.registered" /></p>
                                 </div>
                             </Step>
                         </Steps>
-                        <BottomNavigation onClickNext={this.onClickNext} onClickPrev={this.onClickPrev} className={"justify-content-center " + (this.state.bottomNavHidden && "invisible")} prevLabel={messages["wizard.prev"]} nextLabel={messages["wizard.next"]} />
+                        <BottomNavigation onClickNext={this.onClickNext} onClickPrev={this.onClickPrev} className={"justify-content-center " + (this.state.bottomNavHidden && "invisible")} prevLabel={messages["lottery.prev"]} nextLabel={messages["lottery.next"]} />
                     </Wizard>
                 </CardBody>
             </Card>

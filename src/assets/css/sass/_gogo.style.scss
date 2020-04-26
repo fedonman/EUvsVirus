@@ -1701,7 +1701,7 @@ button {
 
   .navbar-logo {
     width: 110px;
-    height: 35px;
+    height: 60px;
     position: absolute;
     left: 0;
     right: 0;
@@ -8854,4 +8854,8 @@ footer.page-footer {
   background-image: url(https://i2.wp.com/myvacationitineraries.com/media/2019/06/where-stay-venice-italy.jpg);
   background-size: cover;
   min-height: 500px;
+}
+
+.discovery-map {
+  height: calc(100vh - 200px);
 }

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { injectIntl } from "react-intl";
 
+import ReactAudioPlayer from 'react-audio-player';
+
 import {
   UncontrolledDropdown,
   DropdownItem,
@@ -238,7 +240,13 @@ class TopNav extends Component {
             </span>
           </div> */}
 
-          <div className="d-inline-block">
+          {
+            <div className="d-inline-block">
+              
+            </div>
+          }
+
+          {/* <div className="d-inline-block">
             <UncontrolledDropdown className="ml-2">
               <DropdownToggle
                 caret
@@ -260,7 +268,7 @@ class TopNav extends Component {
                 })}
               </DropdownMenu>
             </UncontrolledDropdown>
-          </div>
+          </div> */}
           {/* <div className="position-relative d-none d-none d-lg-inline-block">
             <a
               className="btn btn-outline-primary btn-sm ml-2"
@@ -275,13 +283,12 @@ class TopNav extends Component {
           <span className="logo d-none d-xs-block" />
           <span className="logo-mobile d-block d-xs-none" />
         </a>
-
         <div className="navbar-right">
-          {isDarkSwitchActive && <TopnavDarkSwitch/>}
+          {/* {isDarkSwitchActive && <TopnavDarkSwitch/>}
           <div className="header-icons d-inline-block align-middle">
-            {/* <TopnavEasyAccess /> */}
+            <TopnavEasyAccess />
             <TopnavNotifications />
-            {/* <button
+            <button
               className="header-icon btn btn-empty d-none d-sm-inline-block"
               type="button"
               id="fullScreenButton"
@@ -292,8 +299,8 @@ class TopNav extends Component {
               ) : (
                 <i className="simple-icon-size-fullscreen d-block" />
               )}
-            </button> */}
-          </div>
+            </button>
+          </div> */}
           <div className="user d-inline-block">
             <UncontrolledDropdown className="dropdown-menu-right">
               <DropdownToggle className="p-0" color="empty">
@@ -303,11 +310,11 @@ class TopNav extends Component {
                 </span>
               </DropdownToggle>
               <DropdownMenu className="mt-3" right>
-                <DropdownItem>Account</DropdownItem>
+                {/* <DropdownItem>Account</DropdownItem>
                 <DropdownItem>Features</DropdownItem>
                 <DropdownItem>History</DropdownItem>
                 <DropdownItem>Support</DropdownItem>
-                <DropdownItem divider />
+                <DropdownItem divider /> */}
                 <DropdownItem onClick={() => this.handleLogout()}>
                   Sign out
                 </DropdownItem>
